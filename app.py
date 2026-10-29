@@ -29,10 +29,6 @@ def excel_bytes(df):
             for c in 'CDE':sheet.column_dimensions[c].width=25
     return output.getvalue()
 
-st.image(
-    str(Path(_file_).with_name("logo.png")),
-    width=180
-)
 st.title('🛢️ OCR Harga Minyak Mentah by Wamen RI 2029')
 st.caption('OCR.space API · Streamlit · SQLite · Excel')
 tab_upload,tab_history=st.tabs(['📤 Upload & OCR','🗂️ Histori SQLite'])
